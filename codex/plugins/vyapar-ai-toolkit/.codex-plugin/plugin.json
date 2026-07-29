@@ -1,0 +1,27 @@
+{
+  "name": "vyapar-ai-toolkit",
+  "version": "1.0.0",
+  "description": "Codex-native Vyapar engineering workflows, Ruflo orchestration, and optional infrastructure MCP servers.",
+  "author": {
+    "name": "Vyapar"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Vyapar AI Toolkit",
+    "shortDescription": "Vyapar workflows and engineering tools for Codex.",
+    "longDescription": "Adds 36 Codex-native skills for planning, implementation, reviews, releases, AgentDB, Ruflo orchestration, and quality workflows. Optional MCP servers cover Ruflo, MySQL, MongoDB, and AWS.",
+    "developerName": "Vyapar",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Code",
+      "Review",
+      "Planning"
+    ],
+    "defaultPrompt": [
+      "Explore this codebase and map the relevant components.",
+      "Review my current changes and identify concrete risks.",
+      "Plan this feature with the appropriate Vyapar workflow."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

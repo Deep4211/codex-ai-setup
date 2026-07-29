@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "ruflo": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ruflo@latest",
+        "mcp",
+        "start"
+      ]
+    },
+    "mysql": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@benborla29/mcp-server-mysql"
+      ],
+      "env_vars": [
+        "MYSQL_HOST",
+        "MYSQL_PORT",
+        "MYSQL_USER",
+        "MYSQL_PASS",
+        "MYSQL_DB"
+      ],
+      "enabled": false
+    },
+    "mongodb": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mongodb-mcp-server"
+      ],
+      "env_vars": [
+        "MDB_MCP_CONNECTION_STRING"
+      ],
+      "enabled": false
+    },
+    "aws-mcp": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy-for-aws@latest",
+        "https://aws-mcp.us-east-1.api.aws/mcp",
+        "--metadata",
+        "AWS_REGION=ap-south-1"
+      ],
+      "enabled": false
+    }
+  }
+}
