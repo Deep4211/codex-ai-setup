@@ -1,6 +1,6 @@
 # Codex AI Setup
 
-Standalone, Codex-native AI tooling for Vyapar repositories.
+Standalone, Codex-native AI
 
 This repository is intentionally independent from Claude configuration. It contains its own Codex plugin, marketplace, skills, MCP definitions, installer, inventory, and `AGENTS.md` template.
 
