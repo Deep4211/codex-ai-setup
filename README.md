@@ -1,4 +1,4 @@
-# Vyapar Codex AI Setup
+# Codex AI Setup
 
 Standalone, Codex-native AI tooling for Vyapar repositories.
 
